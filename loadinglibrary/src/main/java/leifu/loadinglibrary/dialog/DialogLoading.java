@@ -1,4 +1,4 @@
-package leifu.loading.view;
+package leifu.loadinglibrary.dialog;
 
 
 import android.app.Dialog;
@@ -7,7 +7,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import leifu.loading.R;
+import leifu.loadinglibrary.R;
 
 
 public class DialogLoading extends Dialog {
@@ -21,7 +21,7 @@ public class DialogLoading extends Dialog {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.dialog_loading);
+		setContentView(R.layout.animlist_loading_dialog);
 		ImageView img = (ImageView) findViewById(R.id.iv_loading);
 		AnimationDrawable anim = (AnimationDrawable) img.getDrawable();
 		anim.start();

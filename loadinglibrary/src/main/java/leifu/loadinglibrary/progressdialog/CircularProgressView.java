@@ -1,4 +1,4 @@
-package leifu.loading.view;
+package leifu.loadinglibrary.progressdialog;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -20,7 +20,7 @@ import android.view.animation.LinearInterpolator;
 import java.util.ArrayList;
 import java.util.List;
 
-import leifu.loading.R;
+import leifu.loadinglibrary.R;
 
 
 /**

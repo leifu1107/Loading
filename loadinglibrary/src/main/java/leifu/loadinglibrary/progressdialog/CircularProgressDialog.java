@@ -1,4 +1,4 @@
-package leifu.loading.view;
+package leifu.loadinglibrary.progressdialog;
 
 
 import android.app.Dialog;
@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import leifu.loading.R;
+import leifu.loadinglibrary.R;
 
 
 public class CircularProgressDialog extends Dialog {
@@ -26,14 +26,14 @@ public class CircularProgressDialog extends Dialog {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.circular_process_dialog);
+		setContentView(R.layout.custom_circular_process_dialog);
 		setCanceledOnTouchOutside(false);
 		initView();
 	}
 
 	private void initView() {
-		progress = findViewById(R.id.progress);
-		text = findViewById(R.id.text);
+		progress = (CircularProgressView) findViewById(R.id.progress);
+		text = (TextView) findViewById(R.id.text);
 	}
 
 	public void setColor(String color) {

@@ -1,4 +1,4 @@
-package leifu.loading.view;
+package leifu.loadinglibrary.progressdialog;
 
 /**
  * This class implements CircularProgressViewListener. Use this if you don't want to implement all methods for the listener.

@@ -1,4 +1,4 @@
-package leifu.loading.view;
+package leifu.loadinglibrary.progressdialog;
 
 /**
  * Listener interface to provide different callbacks for Circular Progress

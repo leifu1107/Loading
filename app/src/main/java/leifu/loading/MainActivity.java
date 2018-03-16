@@ -1,10 +1,11 @@
 package leifu.loading;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import leifu.loading.view.CircularProgressDialog;
-import leifu.loading.view.DialogLoading;
+import leifu.loadinglibrary.dialog.ProgressDialogUtil;
+import leifu.loadinglibrary.progressdialog.CircularProgressDialog;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,10 +15,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        circularProgressDialog = new CircularProgressDialog(this);
-//        circularProgressDialog.show();
-        DialogLoading dialogLoading = new DialogLoading(this);
-        dialogLoading.show();
+        //第一种加载
+//       circularProgressDialog = new CircularProgressDialog(this);
+//      circularProgressDialog.show();
+        //第2种加载
+//        DialogLoading dialogLoading = new DialogLoading(this);
+//        dialogLoading.show();
+        //第3种加载
+        ProgressDialogUtil.showWaitDialog(this, "等等...");
     }
 }
